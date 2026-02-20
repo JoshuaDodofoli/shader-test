@@ -1,12 +1,12 @@
 'use client'
 
 import dynamic from "next/dynamic";
+import Scene from "./components/Scene";
 
-const Scene = dynamic(() => import("@/app/components/Scene"), { ssr: false });
 
 export default function Home() {
   return (
-    <main className="w-screen flex items-center justify-center h-screen">
+    <main className="w-screen h-screen">
       <Scene />
     </main>
   );
